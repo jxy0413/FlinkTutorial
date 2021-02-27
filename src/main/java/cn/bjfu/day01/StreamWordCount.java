@@ -15,7 +15,7 @@ public class StreamWordCount {
         ParameterTool parameterTool = ParameterTool.fromArgs(args);
         String host = parameterTool.get("host");
         int port = parameterTool.getInt("port");
-        DataStream<String> inputStream = env.socketTextStream(host,port);
+        DataStream<String> inputStream = env.socketTextStream(host,port).slotSharingGroup("red");
 
         inputStream.flatMap(new WordCount.MyflatMapper()).keyBy(0).sum(1).print();
 
