@@ -20,7 +20,7 @@ public class MySensorSource implements SourceFunction<SensorReading> {
                   map.put(sensorId,newTemp);
                   ctx.collect(new SensorReading(sensorId,System.currentTimeMillis(),newTemp));
                }
-               Thread.sleep(1000);
+               //Thread.sleep(1000);
            }
     }
 

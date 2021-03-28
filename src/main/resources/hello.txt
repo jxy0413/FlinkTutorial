@@ -1,7 +1,5 @@
-hello world
-hello flink
-hello spark
-hello scala
-how are you
-fine thank you
-and you
+1213131344,kafka,a
+1131313131,kafka,b
+1131313131,mysql,b
+
+//问题 5分钟 a3次
