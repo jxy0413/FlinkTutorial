@@ -29,9 +29,7 @@ public class TestWindow {
                 return helloSource;
             }
         });
-        txtStream.keyBy("source")
-                .timeWindow(Time.minutes(5))
-                .aggregate(new TestProcess())
+
 
     }
 }
